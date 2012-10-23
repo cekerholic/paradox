@@ -31,7 +31,10 @@ All your need to do is declare the position of your parallax, e.g. :
 Licensed under [Creative Commons Attribution 3.0 Unported (CC BY 3.0)](http://creativecommons.org/licenses/by/3.0/)
 
 ### Changelog
-*	1.1
+*	1.0.1
+
 	Adding easing options
+	
 * 	1.0
+
 	Initial release
