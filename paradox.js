@@ -10,7 +10,8 @@
 			bounce:		true,
 			repeat:		false,
 			fade:		false,
-			scroll:		false
+			scroll:		false,
+			easing:		'swing'
 		};
 		
 		settings = $.extend({}, defaults, options);
@@ -30,14 +31,14 @@
 								left:settings.horizontal,
 								top:settings.vertical,
 								opacity:settings.fade ? 0 : 1
-							}, settings.speed)
+							}, settings.speed, settings.easing)
 						}
 						else {
 							$item.animate({
 								left:0,
 								top:0,
 								opacity:1
-							}, settings.speed)
+							}, settings.speed, settings.easing)
 						}
 						$top = $elemtop
 					});
@@ -49,14 +50,14 @@
 						left:settings.horizontal,
 						top:settings.vertical,
 						opacity:settings.fade ? 0 : 1
-					}, settings.speed,
+					}, settings.speed, settings.easing,
 					function() {
 						if (settings.bounce) {
 							$item.animate({
 								left:0,
 								top:0,
 								opacity:1
-							}, settings.speed,
+							}, settings.speed, settings.easing,
 							function(){
 								if (settings.repeat) {
 									return animx()

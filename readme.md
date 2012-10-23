@@ -3,6 +3,7 @@ This a simple parallax plugin that rely on jQuery `.animate()`. Paradox work by 
 
 ### Basic CSS
 All your need to do is declare the position of your parallax, e.g. :
+
 	.parallax {
 		position: absolute;
 	}
@@ -21,7 +22,8 @@ All your need to do is declare the position of your parallax, e.g. :
 			bounce:		true,	// (Boolean) Enable bouncing effect
 			repeat:		false,	// (Boolean) Infinite animation
 			fade:		false,	// (Boolean) Fading animation
-			scroll:		false	// (Boolean) Start parallax after scroll is triggered
+			scroll:		false,	// (Boolean) Start parallax after scroll is triggered
+			easing:		'swing'	// (String) Required jQuery Easing plug-in (http://gsgd.co.uk/sandbox/jquery/easing/)
 		});
 	</script>
 
@@ -29,6 +31,7 @@ All your need to do is declare the position of your parallax, e.g. :
 Licensed under [Creative Commons Attribution 3.0 Unported (CC BY 3.0)](http://creativecommons.org/licenses/by/3.0/)
 
 ### Changelog
+* 1.1
+	
 * 1.0
-
-Initial release
+	Initial release
